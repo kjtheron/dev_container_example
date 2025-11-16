@@ -1,0 +1,13 @@
+{
+    "r.alwaysUseActiveTerminal": true,
+    "r.bracketedPaste": true,
+    //"r.sessionWatcher": true,
+    "r.plot.useHttpgd": true,
+    "remote.autoForwardPortsFallback": 0,
+    //"r.lsp.diagnostics": false,
+    //"r.lsp.debug": true,
+    //"remote.autoForwardPortsFallback": 0,
+    //"r.rpath.linux": "/usr/local/lib/R",
+    //"r.rterm.linux": "/usr/local/lib/R"
+ }
+
