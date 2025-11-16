@@ -1,0 +1,5 @@
+# Build
+docker build . -f ./Docker_Test/Dockerfile -ti --rm --memory=512m --cpus=2 -t rocker/geospatial:TEST 
+
+# TMUX
+tmux attach-session -t 0
