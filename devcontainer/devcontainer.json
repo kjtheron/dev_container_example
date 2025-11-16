@@ -1,0 +1,32 @@
+{
+    "name": "R Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".",
+        "args": {
+            "CRAN_MIRROR": "https://cran.rstudio.com/"
+        }
+    },
+    "runArgs": [
+        "--memory=4g",//22g
+        "--cpus=4",
+        "--memory-swap=8g"//44g (-1 means unlimited swap)
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // R Extensions  
+                "rdebugger.r-debugger",
+                "reditorsupport.r",
+                // Documentation Extentions
+                "purocean.drawio-preview",
+                "redhat.vscode-yaml",
+                "yzhang.markdown-all-in-one",
+                // Docker Supporting Extensions
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers"
+            ]
+        }
+    },
+    "postCreateCommand": "R"
+}
